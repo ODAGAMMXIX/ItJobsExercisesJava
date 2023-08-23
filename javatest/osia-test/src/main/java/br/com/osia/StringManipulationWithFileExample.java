@@ -9,7 +9,7 @@ public class StringManipulationWithFileExample {
         Scanner scanner = new Scanner(System.in);
 
         // Create a sample string
-        String originalString = "Hello, World!";
+        String originalString = "Hello World!";
 
         System.out.println("Original String: " + originalString);
         waitForInput(scanner);
@@ -48,7 +48,6 @@ public class StringManipulationWithFileExample {
             e.printStackTrace();
         }
     }
-
     
     private static void readAndProcessCSV(String filePath) {
         List<String> results = new ArrayList<>();
@@ -57,17 +56,19 @@ public class StringManipulationWithFileExample {
             // Skip the header line
             if (scanner.hasNextLine()) {
                 scanner.nextLine();
-            }
-    //NOT READING THE FILE
+            }    
             while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                String[] parts = line.split(",");
-                if (parts.length == 2) {
-                    String originalString = parts[0];
-                    int position = Integer.parseInt(parts[1]);
-                    String result = "Original String: " + originalString + ", Position: " + position;
-                    results.add(result);
-                }
+                String line = scanner.nextLine();               
+                String[] parts = line.split(",");               
+                String originalString = parts[0];
+
+                int position = Integer.parseInt(parts[1]);
+                
+                String result = "Original String: " + originalString + ", Position: " + position;
+                System.out.println(result);
+                results.add(result);
+            
+             //   System.out.println(results);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
