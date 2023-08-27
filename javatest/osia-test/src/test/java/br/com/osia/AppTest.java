@@ -8,7 +8,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 
-public class AppTest 
+public class AppTest
 {
     // essa anotação é obrigatoria para funciomaneto do teste
     @Test
@@ -45,5 +45,7 @@ public class AppTest
     }
 }
 
-//comando para gerar estrutura de pastas "mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4~"
+//comando para gerar estrutura de pastas
+// "mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes 
+//-DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4~"
 

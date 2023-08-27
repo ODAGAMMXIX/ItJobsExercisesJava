@@ -1,3 +1,5 @@
+package br.com.osia;
+
 import java.util.*;
 
 public class JavaStdInNStdOutI {
